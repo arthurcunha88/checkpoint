@@ -1,19 +1,25 @@
-# projeto-poo
-Repositório destinado a elaboração do projeto de programação orientada a objetos (POO)- 2026.1
+# 🎮 Checkpoint - Gerenciador de Backlog de Jogos
 
-Organização base 
+Este repositório contém o projeto de Programação Orientada a Objetos (POO) destinado à elaboração de um sistema de gerenciamento de backlog e avaliações de jogos de videogame.
 
+---
+
+## 🏗️ Arquitetura do Projeto
+
+O sistema está organizado utilizando o padrão de arquitetura em camadas para isolar responsabilidades e manter o código limpo, escalável e legível:
+
+```text
 src/
 │
-├── entities/                   # Guarda o modelo de dados e as regras de herança
-│   ├── Jogo.java               (Abstrata)
-│   ├── JogoCampanha.java       (Filha)
-│   ├── JogoCompetitivo.java    (Filha)
-│   ├── Review.java             (Composição)
-│   └── RegrasBacklog.java      (Interface - pode ficar aqui ou num pacote 'interfaces')
+├── entities/                   # Modelos de dados e contratos
+│   ├── Jogo.java               (Classe Abstrata Mãe)
+│   ├── JogoCampanha.java       (Classe Filha - Herança)
+│   ├── JogoCompetitivo.java    (Classe Filha - Herança)
+│   ├── Review.java             (Classe de Avaliação - Composição)
+│   └── RegrasBacklog.java      (Interface de Contrato)
 │
-├── services/                   # Guarda a lógica de negócios (salvar, listar, validar)
-│   └── BacklogService.java
+├── services/                   # Lógica de negócios e armazenamento
+│   └── BacklogService.java     (Gerenciamento da lista em memória)
 │
-└── program/                    # Porta de entrada do sistema (Interface com o usuário)
-    └── Main.java
+└── program/                    # Ponto de entrada do sistema
+    └── Main.java               (Interface/Fluxo do usuário)
