@@ -1,7 +1,7 @@
 package entities;
 
 // CLASSE FILHA: Herda de entities.Jogo e adiciona a propriedade do encarte
-public abstract class JogoFisico extends Jogo {
+public class JogoFisico extends Jogo {
     private boolean temEncarte;
 
     public JogoFisico(String titulo, String plataforma, Desenvolvedora desenvolvedora, boolean temEncarte) {
@@ -23,5 +23,10 @@ public abstract class JogoFisico extends Jogo {
     @Override
     public String formatarParaArquivo() {
         return super.formatarParaArquivo() + ";" + temEncarte;
+    }
+
+    @Override
+    public void evaluar(int nota, String comentario) {
+
     }
 }

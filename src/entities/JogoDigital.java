@@ -1,7 +1,7 @@
 package entities;
 
 // CLASSE FILHA: Herda de entities.Jogo e adiciona a propriedade da loja virtual
-public abstract class JogoDigital extends Jogo {
+public class JogoDigital extends Jogo {
     private String lojaVirtual;
 
     public JogoDigital(String titulo, String plataforma, Desenvolvedora desenvolvedora, String lojaVirtual) {
@@ -21,5 +21,9 @@ public abstract class JogoDigital extends Jogo {
     @Override
     public String formatarParaArquivo() {
         return super.formatarParaArquivo() + ";" + lojaVirtual;
+    }
+
+    @Override
+    public void evaluar(int nota, String comentario) {
     }
 }

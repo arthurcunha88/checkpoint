@@ -129,7 +129,6 @@ public class GerenciadorJogos {
             incluirJogo(new JogoDigital("Counter-Strike 2", "PC", Valve, "Steam"));
             incluirJogo(new JogoDigital("Hades", "PC", new Desenvolvedora("Supergiant", "EUA"), "Epic Games"));
             incluirJogo(new JogoDigital("The Witcher 3", "PC", CDProjekt, "GOG"));
-            incluirJogo(new JogoDigital("Stardew Valley", "PC", new Desenvolvedora("ConcernedApe", "EUA"), "Steam"));
             incluirJogo(new JogoDigital("Portal 2", "PC", Valve, "Steam"));
 
             listaDeJogos.get(0).avaliar(5, "entities.Jogo impecável de exploração!");
