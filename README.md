@@ -1,25 +1,28 @@
 # 🎮 Checkpoint - Gerenciador de Backlog de Jogos
 
-Este repositório contém o projeto de Programação Orientada a Objetos (POO) destinado à elaboração de um sistema de gerenciamento de backlog e avaliações de jogos de videogame.
+Este repositório contém o projeto de Programação Orientada a Objetos (POO) destinado à elaboração de um sistema de gerenciamento de backlog, logs e avaliações de jogos de videogame.
 
 ---
 
 ## 🏗️ Arquitetura do Projeto
 
-O sistema está organizado utilizando o padrão de arquitetura em camadas para isolar responsabilidades e manter o código limpo, escalável e legível:
+O sistema está estruturado de forma a isolar as responsabilidades de cada componente, utilizando um arquivo de texto na raiz para persistência dos dados de forma simples e direta:
 
 ```text
-src/
+checkpoint/                      # Raiz do projeto
 │
-├── entities/                   # Modelos de dados e contratos
-│   ├── Jogo.java               (Classe Abstrata Mãe)
-│   ├── JogoCampanha.java       (Classe Filha - Herança)
-│   ├── JogoCompetitivo.java    (Classe Filha - Herança)
-│   ├── Review.java             (Classe de Avaliação - Composição)
-│   └── RegrasBacklog.java      (Interface de Contrato)
+├── backlog_jogos.txt            # Arquivo de texto utilizado para salvar e persistir o log dos jogos
 │
-├── services/                   # Lógica de negócios e armazenamento
-│   └── BacklogService.java     (Gerenciamento da lista em memória)
-│
-└── program/                    # Ponto de entrada do sistema
-    └── Programa.java               (Interface/Fluxo do usuário)
+└── src/                         # Código-fonte do sistema
+    │
+    ├── entities/                # Modelos de dados, contratos e estruturas principais
+    │   ├── Avaliavel.java       # Interface que define o contrato para objetos que podem receber notas/críticas
+    │   ├── StatusJogo.java      # Enumeração ou Interface que define os estados do jogo (ex: Jogando, Zerado, Backlog)
+    │   ├── Desenvolvedora.java  # Classe que representa a empresa criadora do jogo (utilizada via Composição)
+    │   ├── Jogo.java            # Classe abstrata base (Mãe) com os atributos e métodos comuns aos jogos
+    │   ├── JogoDigital.java     # Classe filha que herda de Jogo (Especialização para mídia digital)
+    │   ├── JogoFisico.java      # Classe filha que herda de Jogo (Especialização para mídia física)
+    │   └── GerenciadorJogos.java# Classe responsável por agrupar ou orquestrar o comportamento das entidades
+    │
+    └── program/                 # Ponto de entrada (Entry Point) da aplicação
+        └── Programa.java        # Classe principal com o método main e interface de linha de comando (CLI)
