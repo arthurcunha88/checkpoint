@@ -26,7 +26,7 @@ public class JogoFisico extends Jogo {
     }
 
     @Override
-    public void evaluar(int nota, String comentario) {
+    public void evaluar(double nota, String comentario) {
 
     }
 }

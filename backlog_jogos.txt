@@ -1,0 +1,16 @@
+Físico;The Legend of Zelda;Switch;Nintendo;Japão;5.0;entities.Jogo impecável de exploração!;FINALIZADO;true
+Físico;Elden Ring;PS5;FromSoftware;Japão;0.0;Sem comentário;NAO_INICIADO;true
+Físico;God of War Ragnarok;PS5;Santa Monica Studio;EUA;0.0;Sem comentário;NAO_INICIADO;true
+Físico;Red Dead Redemption 2;Xbox One;Rockstar Games;EUA;0.0;Sem comentário;NAO_INICIADO;false
+Físico;Resident Evil 4 Remake;PS5;Capcom;Japão;0.0;Sem comentário;NAO_INICIADO;true
+Físico;The Last of Us Part II;PS4;Naughty Dog;EUA;0.0;Sem comentário;NAO_INICIADO;true
+Físico;Super Mario Odyssey;Switch;Nintendo;Japão;0.0;Sem comentário;NAO_INICIADO;false
+Digital;Cyberpunk 2077;PC;CD Projekt Red;Polônia;4.0;Muito bom após as atualizações.;EM_ANDAMENTO;Steam
+Digital;Minecraft;PC;Mojang Studios;Suécia;0.0;Sem comentário;NAO_INICIADO;Launcher
+Digital;Counter-Strike 2;PC;Valve;EUA;0.0;Sem comentário;NAO_INICIADO;Steam
+Digital;Hades;PC;Supergiant;EUA;0.0;Sem comentário;NAO_INICIADO;Epic Games
+Digital;The Witcher 3;PC;CD Projekt Red;Polônia;0.0;Sem comentário;NAO_INICIADO;GOG
+Digital;Portal 2;PC;Valve;EUA;0.0;Sem comentário;NAO_INICIADO;Steam
+Digital;team fight tatics;pc;Riot Games;eua;4.0;O jogo é um jogo legal .;EM_ANDAMENTO;Riot Games
+Digital;team fight tatics;pc;riot games;eua;0.0;Sem comentário;NAO_INICIADO;riot client
+Digital;team;pc;riot;eua;4.5;jogo legal;EM_ANDAMENTO;riot

@@ -166,7 +166,7 @@ public class GerenciadorJogos {
                 String plataforma = partes[2];
                 String nomeDev = partes[3];
                 String paisDev = partes[4];
-                int nota = Integer.parseInt(partes[5]);
+                double nota = Double.parseDouble(partes[5]);
                 String comentario = partes[6];
                 StatusJogo status = StatusJogo.valueOf(partes[7]);
 

@@ -4,7 +4,7 @@ package entities;
 public abstract class Jogo implements Avaliavel {
     protected String titulo;
     protected String plataforma;
-    protected int nota;
+    protected double nota;
     protected String comentario;
     protected StatusJogo status;
     protected Desenvolvedora desenvolvedora; // COMPOSIÇÃO
@@ -19,8 +19,8 @@ public abstract class Jogo implements Avaliavel {
     }
 
     @Override
-    public void avaliar(int nota, String comentario) {
-        if (nota >= 0 && nota <= 5) {
+    public void avaliar(double nota, String comentario) {
+        if (nota >= 0 && nota <= 5.0) {
             this.nota = nota;
         } else {
             System.out.println("[Erro] A nota deve ser obrigatoriamente entre 0 e 5.");
@@ -33,7 +33,7 @@ public abstract class Jogo implements Avaliavel {
     public void setTitulo(String titulo) { this.titulo = titulo; }
     public String getPlataforma() { return plataforma; }
     public void setPlataforma(String plataforma) { this.plataforma = plataforma; }
-    public int getNota() { return nota; }
+    public double getNota() { return nota; }
     public String getComentario() { return comentario; }
     public StatusJogo getStatus() { return status; }
     public void setStatus(StatusJogo status) { this.status = status; }
