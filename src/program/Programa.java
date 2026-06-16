@@ -98,7 +98,7 @@ public class Programa {
                         gerenciador.atualizarArquivo();
                         System.out.println("-> Registro de jogo atualizado com sucesso!");
                     } else {
-                        System.out.println("-> entities.Jogo não encontrado no sistema.");
+                        System.out.println("-> Jogo não encontrado no sistema.");
                     }
                     break;
 
@@ -109,7 +109,7 @@ public class Programa {
                     if (removido) {
                         System.out.println("-> Registro apagado definitivamente do backlog.");
                     } else {
-                        System.out.println("-> entities.Jogo não encontrado.");
+                        System.out.println("-> Jogo não encontrado.");
                     }
                     break;
 

@@ -22,4 +22,4 @@ src/
 │   └── BacklogService.java     (Gerenciamento da lista em memória)
 │
 └── program/                    # Ponto de entrada do sistema
-    └── Main.java               (Interface/Fluxo do usuário)
+    └── Programa.java               (Interface/Fluxo do usuário)
