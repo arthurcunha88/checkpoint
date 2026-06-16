@@ -11,4 +11,4 @@ Digital;Counter-Strike 2;PC;Valve;EUA;0.0;Sem comentário;NAO_INICIADO;Steam
 Digital;Hades;PC;Supergiant;EUA;0.0;Sem comentário;NAO_INICIADO;Epic Games
 Digital;The Witcher 3;PC;CD Projekt Red;Polônia;0.0;Sem comentário;NAO_INICIADO;GOG
 Digital;Portal 2;PC;Valve;EUA;0.0;Sem comentário;NAO_INICIADO;Steam
-Digital;team;pc;riot;eua;4.5;legal.;EM_ANDAMENTO;riot
+Digital;team;pc;riot;eua;0.0;Sem comentário;NAO_INICIADO;riot
