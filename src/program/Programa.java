@@ -88,7 +88,7 @@ public class Programa {
 
                         System.out.print("\nDeseja dar uma nota e comentário agora? (S/N): ");
                         if (scanner.nextLine().equalsIgnoreCase("S")) {
-                            System.out.print("Digite a nota de avaliação (0 a 5): ");
+                            System.out.print("Digite a nota de avaliação (0.0 a 5.0): ");
                             double novaNota = Double.parseDouble(scanner.nextLine());
                             System.out.print("Escreva seu comentário/review: ");
                             String novoComent = scanner.nextLine();

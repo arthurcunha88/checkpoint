@@ -18,7 +18,7 @@ public class GerenciadorJogos {
     public void incluirJogo(Jogo jogo) {
         listaDeJogos.add(jogo);
         salvarNoArquivo();
-        System.out.println("-> entities.Jogo '" + jogo.getTitulo() + "' cadastrado com sucesso!");
+        System.out.println("-> Jogo '" + jogo.getTitulo() + "' cadastrado com sucesso!");
     }
 
     public boolean excluirJogo(String titulo) {
@@ -50,14 +50,14 @@ public class GerenciadorJogos {
             System.out.println("\n=== REGISTRO ENCONTRADO ===");
             System.out.println("Título: " + j.getTitulo());
             System.out.println("Plataforma: " + j.getPlataforma());
-            System.out.println("entities.Desenvolvedora: " + j.getDesenvolvedora().getNome() + " (" + j.getDesenvolvedora().getPaisOrigem() + ")");
+            System.out.println("Desenvolvedora: " + j.getDesenvolvedora().getNome() + " (" + j.getDesenvolvedora().getPaisOrigem() + ")");
             System.out.println("Tipo: " + j.getTipoJogo() + " | " + j.getAtributoEspecifico());
             System.out.println("Status: " + j.getStatus().getDescricao());
-            System.out.println("Nota do Usuário: " + j.getNota() + "/5");
+            System.out.println("Nota do Usuário: " + j.getNota() + "/5.0");
             System.out.println("Comentário: " + j.getComentario());
             System.out.println("===========================");
         } else {
-            System.out.println("-> entities.Jogo não encontrado no sistema.");
+            System.out.println("-> Jogo não encontrado no sistema.");
         }
     }
 
@@ -131,7 +131,7 @@ public class GerenciadorJogos {
             incluirJogo(new JogoDigital("The Witcher 3", "PC", CDProjekt, "GOG"));
             incluirJogo(new JogoDigital("Portal 2", "PC", Valve, "Steam"));
 
-            listaDeJogos.get(0).avaliar(5, "entities.Jogo impecável de exploração!");
+            listaDeJogos.get(0).avaliar(5, "Jogo impecável de exploração!");
             listaDeJogos.get(0).setStatus(StatusJogo.FINALIZADO);
             listaDeJogos.get(7).avaliar(4, "Muito bom após as atualizações.");
             listaDeJogos.get(7).setStatus(StatusJogo.EM_ANDAMENTO);

@@ -23,7 +23,7 @@ public abstract class Jogo implements Avaliavel {
         if (nota >= 0 && nota <= 5.0) {
             this.nota = nota;
         } else {
-            System.out.println("[Erro] A nota deve ser obrigatoriamente entre 0 e 5.");
+            System.out.println("[Erro] A nota deve ser obrigatoriamente entre 0.0 e 5.0 .");
         }
         this.comentario = comentario;
     }
