@@ -17,13 +17,13 @@ public class Programa {
 
         do {
             System.out.println("\n>>> MENU PRINCIPAL <<<");
-            System.out.println("1. Incluir Novo entities.Jogo");
-            System.out.println("2. Alterar entities.Jogo Existente");
-            System.out.println("3. Excluir entities.Jogo");
+            System.out.println("1. Incluir Jogo");
+            System.out.println("2. Alterar Jogo Existente");
+            System.out.println("3. Excluir Jogo");
             System.out.println("4. Listar Todos os Jogos (Ordem de Cadastro)");
             System.out.println("5. Listar Todos os Jogos (Ordem Alfabética)");
-            System.out.println("6. Buscar entities.Jogo por Título");
-            System.out.println("7. Sair do program.Programa");
+            System.out.println("6. Buscar Jogo por Título");
+            System.out.println("7. Sair do Programa");
             System.out.print("Escolha uma opção: ");
 
             try {
